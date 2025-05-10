@@ -108,3 +108,27 @@ footer {
 .contact-form button:hover {
   background: #1a252f;
 }
+
+/* Mobile-First Navbar */
+nav ul {
+  display: flex;
+  flex-direction: column; /* Stack items vertically on mobile */
+  list-style: none;
+  gap: 1rem;
+  padding: 1rem;
+  background: #2c3e50;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+/* Desktop Styles (min-width: 768px) */
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row; /* Horizontal layout on desktop */
+    justify-content: center;
+  }
+}
